@@ -2,12 +2,6 @@
   --blue: #00acdc;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
@@ -17,7 +11,9 @@ body {
   font-variation-settings: 'wdth' 100;
 }
 
-header {
+.header {
+  margin: 0;
+  box-sizing: border-box;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -29,7 +25,9 @@ header {
   height: 40px;
 }
 
-ul {
+.nav-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
   align-items: center;
@@ -44,7 +42,7 @@ ul {
   margin-left: 20px;
 }
 
-a.nav-link {
+.nav-link {
   color: #000;
   height: 60px;
   width: max-content;
@@ -55,11 +53,11 @@ a.nav-link {
   font-size: 12px;
 }
 
-a:hover {
+.nav-link:hover {
   color: var(--blue);
 }
 
-a.is-active {
+.is-active {
   color: var(--blue);
 }
 
